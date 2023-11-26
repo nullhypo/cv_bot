@@ -1,14 +1,41 @@
-experience:
--is a data scientist with DevOps and Mlops knowledge.
--Experienced Data Scientist specializing in client interactions, equipped with cloud engineering expertise.
--Has a robust understanding of MLOps principles and NLP techniques in particular.
--likes learning new skills, creating and deploying machine learning models and pipelines for NLP,
-recommender systems, deep learning, im tries to continuously learn new skills.
--is Proficient in leveraging the Hugging Face platform for fine-tuning large language models.
--has over 20 years experience in data science.
--speaks the following languages: french, english and spanish.
--has the following technical skills: Python, PyTorch, Spark , Keras ,Bigquery , SQL, Athena, Databricks/Azure, Data Factory, AWS ,S3, GCP , SageMaker , Docker, PowerBI / DAX, Tableau , Google Data Studio ,Looker, Snowflake, Shiny, Roboflow.
--able to use large language models to create NLP tasks and chatbots such as this one.
--you can find more information about my experience in my github page (https://github.com/thierrydecae).
--in my most recent is experience, I was contracting for Deloitte, but that contract is finishing soon.
--in working for Deloitte I worked on secondment at Fable Data Ltd, a leading data aggregator and data science company which aims to use machine learning algorithms/NLP and various processes to provide award-winning, real-time datasets to government, central banks, investors and corporate organizations. I was responsible for leading a pod/end to end product development for a Spanish data provider using Azure, Python, Data Factory, Vscode, Neural Networks, NLP, Regex, NER and Git.
+.............................. Ben Stevens
+
+07540239399    ben.st@hotmail.com    linkedin.com/in/ben-stevens-aa885737
+
+Experienced Data Scientist/ML Engineer - an expert in developing deep learning and traditional machine learning models, segmentations and pipelines and deploying then to production using MLOps principles
+Proven experience developing NLP systems using Transformers and neural nets in PyTorch and TensorFlow
+Expert in Python, PySpark & SQL
+Extensive experience providing advanced analystics to solve business problems
+Expert in MLOps principles within the Azure platform and DataBricks including Microsoft certification
+  TECHNICAL SKILLS SUMMARY
+
+Deep Learning
+Neural Nets, transformers (fine-tuning LLM’s e.g. DistillBERT, FLAN-T5), LSTM, PyTorch, TensorFlow, Keras API, image recognition models using CNN’s, implementation constructs such as, generators, callbacks, tokenization/embedding, quantization
+
+NLP	
+Deep learning for text classification and summarisation using transformers and Neural Nets, tokenization/vectorization using tfidf and ngrams, Generative AI – Hugging Face transformers library (autoclasses, trainer, evaluate, pipelines), cosine similarity and KNN for pattern discovery, NER using Spacy, regex for text matching. prompt engineering (zero/one/few-shot inference), instruction fine-tuning, prompt datasets, PEFT adapters (LoRA/prompt tuning, RHLF (reduce toxicity etc), transformer reinforcement learning using trl, siamese networks, ppo
+
+Traditional Machine Learning and statistics
+GBTClassifer, xgboost, Random Forest, SVM’s, SHAP explainers, Dimensionality reduction (PCA/multi-dimensional scaling), Clustering, Forecasting (ARIMA, SARIMAX), Fast Fourier Transforms, Regularised Multiple/Logistic Regression, KNN, Naïve Bayes, SVM, Mixed Linear Models, Marketing Mix Modelling, A/B testing and hypothesis testing, ANOVA, difference in differences
+
+Programming									
+    • Python (since 2013)
+        ◦ Deep learning, ML, scientific computing and data processing – pandas, NumPy, sklearn, SciPy, MlLib, torch, tensotflow, transformers, peft
+        ◦ OOP for pipelines, algorithms and applications – classes, decorators, pytest, unittest 
+        ◦ Optimisation/Parallelisation/Streaming - Python Asyncio, multiprocessing, ONNX
+    • PySpark (Fable Data, Mars, Future Anthem)
+    • SQL, relational databases (throughout career), SAS 
+
+Platforms									
+    • Azure (Fable Data, Toshiba, Mars, Future Anthem & UKHSA) inc. Microsoft certification. Data Lakehouse, Cosmos DB, SQL/synapse databases, Data Factory, Postgress
+    • Azure Machine Learning (AML SDK, hyperdrive, MLFlow API)
+    • DataBricks (Fable Data, Mars, Future Anthem) 
+
+Programming Tools
+    • Git and Jira for version control, review, and project management
+    • VS Code – gitlens, debug, notebooks, virtual environments. PyCharm/IntelliJ, Jupyter notebooks
+
+Analytics & Visualization
+    • Plotly & Plotly Dash, Matplotlib, Seaborn
+    • Power BI, Tableau and PowerPoint.
+    • Advanced Excel including Visual Basic
