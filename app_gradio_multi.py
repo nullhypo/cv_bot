@@ -2,7 +2,7 @@ import os
 import sys
 from dotenv import load_dotenv
 import openai
-from langchain.chains import ConversationalRetrievalChain, RetrievalQA
+from langchain.chains import LLMChain, ConversationalRetrievalChain, RetrievalQA
 from langchain.chat_models import ChatOpenAI
 from langchain.document_loaders import DirectoryLoader, TextLoader
 from langchain.embeddings import OpenAIEmbeddings
@@ -10,10 +10,10 @@ from langchain.indexes import VectorstoreIndexCreator
 from langchain.indexes.vectorstore import VectorStoreIndexWrapper
 from langchain.llms import OpenAI
 from langchain.text_splitter import CharacterTextSplitter
+from langchain.prompts import PromptTemplate
 
 __import__('pysqlite3')
 import sys
-#
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 from langchain.vectorstores import Chroma
@@ -42,8 +42,10 @@ splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=10)
 docs = splitter.split_documents(docs)
 
 # Convert the document chunks to embedding and save them to the vector store
-vectorstore = Chroma.from_documents(docs, embedding=OpenAIEmbeddings(), persist_directory="./data")
-vectorstore.persist()
+vectorstore = Chroma.from_documents(docs, embedding=OpenAIEmbeddings())
+
+#vectorstore = Chroma.from_documents(docs, embedding=OpenAIEmbeddings(), persist_directory="./data")
+#vectorstore.persist()
 
 chain = ConversationalRetrievalChain.from_llm(
     ChatOpenAI(temperature=0.7, model_name='gpt-3.5-turbo'),
@@ -55,7 +57,7 @@ chain = ConversationalRetrievalChain.from_llm(
 chat_history = []
 
 with gr.Blocks() as demo:
-    chatbot = gr.Chatbot([("", "Hello, I'm Ben's chatbot. I'm there to answer any question you have about Ben's CV")],avatar_images=["./input/avatar/Guest.jpg","./input/avatar/Thierry Picture.jpg"])
+    chatbot = gr.Chatbot([("", "Hello, I'm Ben's chatbot. I'm there to answer any question you have about Ben's CV")],avatar_images=["./input/avatar/Guest.jpg","./input/avatar/Ben.jpg"])
     msg = gr.Textbox()
     clear = gr.Button("Clear")
     chat_history = []
@@ -84,3 +86,4 @@ with gr.Blocks() as demo:
 demo.launch(debug=True)
 
 
+        
